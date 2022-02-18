@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EterNomm's Birthday</title>
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
+    <meta name="description" content="EterNomm's Birthday cooldown.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../../vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="../../vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../vendor/lightcase/lightcase.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    
+    <style>
+        body {
+        width:100%;
+        overflow-x:hidden;
+        overflow-y:hidden;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 0px;
+        }
+
+        h3 {
+            color: black;
+        }
+
+        p {
+            text-align: center;
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body  data-spy="scroll" data-target="#navbar" class="static-layout">
+    <nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center text-white" href="/">
+                <p class="font-weight-bolder mb-0">Homepage</p>
+            </a>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 id="title">EterNomm's Birthday :3</h1>
+    <br>
+    <br>
+    <h2 id="cd"></h2>
+    <!-- Script -->
+    <script>
+        // Set date
+        var countDownDate = new Date("Sep 12, 2022 00:00:00").getTime();
+        // Update every 1 second
+        var x = setInterval(function() {
+            // Get today's date anf time
+            var now = new Date().getTime();
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+            // Time calculations
+            var days = Math.floor(distance / (1000 * 60 * 60 *24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output
+            document.getElementById("cd").innerHTML = days+"d " + hours+"h " + minutes+"m " + seconds+"s";
+
+            // If countdown is over
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("cd").innerHTML = "Happy Bithday to EterNomm !!!"
+            }
+        })
+    </script>
+
+    <br>
+    <p>Created by LyQuid *h3h3h3h3h3*</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>It's also LyQuid's birthday too :)</p>
+     
+    <!-- Main JS -->
+    <script src="../../js/app.min.js"></script>
+    <script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>
